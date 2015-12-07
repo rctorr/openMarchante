@@ -1,0 +1,32 @@
+/* css/main.css */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+header#barsup {
+  background-color: #eee;
+  color: #666;
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 12px;
+}
+
+aside#moneda {
+  float: left;
+  margin-left: 50px;
+}
+
+nav#menuStat {
+  float: right;
+  margin-right: 50px;
+}
+
+/***
+   Estilos varios
+***/
+div.reset {
+  clear: both;
+}
