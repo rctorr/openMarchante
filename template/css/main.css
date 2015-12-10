@@ -1,7 +1,5 @@
 /* css/main.css */
 body {
-  margin: 0px;
-  padding: 0px;
   font-size: 16px;
   font-family: Arial;
 }
@@ -10,7 +8,7 @@ header#barsup {
   background-color: #eee;
   color: #666;
   width: 100%;
-  padding: 5px 0px;
+  padding: 10px 0px;
   font-size: 12px;
 }
 
@@ -23,6 +21,305 @@ nav#menuStat {
   float: right;
   margin-right: 50px;
 }
+
+/***
+   Estilos para el header del contenido principal
+***/
+article {
+  width: 960px;
+  margin: 0px auto;
+  margin-top: 20px;
+
+}
+article header form {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  float: right;
+  margin-right: 10px;
+}
+
+article header form input {
+  height: 38px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+input#busqueda {
+  width: 300px; /* 370-16-2 = 352 */
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #999;
+  outline: 0px;
+}
+
+input#busqueda:focus {
+  border: 1px solid rgb(1, 82, 221);
+  box-shadow: 0px 0px 3px rgb(1, 82, 221);
+}
+
+button#submit {
+  height: 42px;
+  width: 76px; /* 400-(300+16+2) =  78 - 2 = 76 */
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button#submit:hover {
+  border: 1px solid #999;
+}
+
+aside#carStatus {
+  border-radius: 8px;
+  background-color: #333;
+  color: #eee;
+  display: inline-block;
+  padding: 1px 8px;
+  vertical-align: top;
+  height: 40px;
+  width: 250px;
+  text-align: center;
+  line-height: 40px;
+  float: right;
+}
+
+aside#carStatus:hover {
+  background-color: #222;
+}
+
+/***
+   Estilos para el nav, osea menú principal
+***/
+article nav {
+  width: 940px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #229AC8;
+  color: #eee;
+  padding: 0px 10px;
+  box-shadow: 0px 1px 2px #333;
+}
+
+article nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+article nav ul li{
+  float: left;
+  position: relative;
+}
+
+article nav ul li a{
+  text-decoration: none;
+  color: #eee;
+  padding: 15px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+article nav ul li a:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* Estilos para submenus */
+article nav ul li ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  width: 150px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px #222;
+}
+
+article nav ul li ul li {
+  width: 150px;
+  color: #222;
+  background-color: #fff;
+}
+
+article nav ul li ul li a {
+  width: 120px; /* 150 - 15 - 15 = 120 */
+  color: #222;
+  background-color: #fff;
+}
+
+article nav ul li ul li a:hover {
+  color: #eee;
+  background-color: #229AC8;
+}
+
+article nav ul li ul li:hover {
+  background-color: #229AC8;
+  color: #eee;
+}
+
+article nav ul li:hover ul {
+  display: block;
+}
+
+li.sep {
+  width: 100%;
+  border: 0px solid #000;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0px;
+  padding: 0px;
+}
+
+/***
+   Estilos para la barra de ruta
+***/
+header#ruta {
+  display: none;
+}
+
+/***
+   Estilos para el contenido principal
+***/
+div#banner {
+  box-shadow: 0px 1px 2px #666;
+  width: 960px;
+}
+
+div#banner img {
+  width: 100%;
+}
+
+div#banner:hover img {
+  width: 1140px;
+}
+
+/***
+   Estilos para la sección de ofertas
+***/
+div#ofertas {
+  width: 960px;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+div#ofertas h3 {
+  font-weight: normal;
+}
+
+div#ofertas aside {
+  width: 196px;     /* 960 - 15*3 = 915 -> 915/4 = 228.8 */
+  height: 370px;
+  border: 1px solid #999;
+  float: left;
+  margin-right: 15px;
+  padding: 15px;
+  position: relative;
+}
+
+div#ofertas aside.ultimo {
+  margin-right: 0px;
+}
+
+div#ofertas aside a {
+  text-decoration: none;
+  color: #23A1D1;
+  font-size: 14px;
+}
+
+div#ofertas aside a:hover {
+  color: #0040FF;
+}
+
+div#ofertas aside p {
+  font-size: 12px;
+  color: #666;
+}
+
+div#ofertas aside div.barinf {
+  position: absolute;
+  width: 100%;
+  height: 37px;
+  bottom: 0px;
+  left: 0px;
+}
+
+div#ofertas aside div.barinf a {
+  display: inline-block;
+  height: 35px;
+  width: 111px;
+  background-color: #eee;
+  float: left;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #666;
+  line-height: 35px;
+}
+
+div#ofertas aside div.barinf a:hover {
+  background-color: #ccc;
+  color: #444;
+}
+
+/***
+   Estilos para sección de marcas
+***/
+div#marcas {
+  width: 960px;
+  height: 100px;
+  margin: 0px auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 1px #999;
+}
+
+/***
+   Estilos para footer
+***/
+footer {
+  background-color: #333;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+footer section {
+  width: 960px;
+  margin: 0px auto;
+}
+
+footer section aside {
+  float: left;
+  width: 228px;
+  margin-right: 15px;
+  color: #fff;
+  font-size: 12px;
+}
+
+footer section aside.ultimo {
+  margin-right: 0px;
+}
+
+footer section aside ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  color: #ccc;
+}
+
+footer section hr {
+  border: 0px solid #000;
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+footer section p {
+  font-size: 12px;
+  color: #ccc;
+}
+
 
 /***
    Estilos varios
