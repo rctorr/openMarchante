@@ -1,0 +1,49 @@
+Objetivo:
+=========
+Clonar el CMS llamado OpenCart
+
+
+Página a clonar
+===============
+0. [ok][base.html]
+1. [ok][Inicio]
+   Menú -> [ ][Muestra productos de la categoría seleccionada]
+   Banner -> [ ][Muestra detalle de producto seleccionado]
+   Busqueda -> [ ][Mostrar lista de productos que coincidan con las palabras
+                   de búsqueda]
+   Lista de ofertas -> [ ](ver banner)
+   Marcas -> [ ][Muestra lista de productos que coincidan con la marca]
+                (ver menú)
+   Botón carrito de compra -> [ ][Muestra lista de productos en carrito de
+                 compra]
+   Botón de moneda -> [ ](Acción: Cambiar los precios de la página actual a
+                          la moneda seleccionada)
+   Botón de deseos -> [ ][Muestra lista de productos selecionado por el usuario
+                          y que desea tener]
+  Botón Usuario > Entrar -> [ ][Muestra un formulario para solicitar usuario y
+                                clave]
+  Botón Usuario > Registrar -> [ ][Muestra una forma para registrar nuevos
+                                  usuarios]
+2. Panel de administración (localhost/openMarchante/admin)
+   1. [login]
+      - [principal]
+        - [categorías]
+        - [productos]
+           - [Agregar producto]
+           - [Modificar un producto]
+           - [Listar productos]
+            - (Eliminar producto)
+         - template(*)
+         - medios de pago(*) <- paypal
+         - [usuarios]
+            - (Agregar usuario)
+            - (Modificar un usuario)
+            - (Eliminar usuario)
+            - (Listar usuarios)
+
+Definir la página de lista de productos (html y css)
+Definir la página de lista de categorías (html y css)
+Definir la página de detalle de producto (html y css)
+Login (html, css, php y base de datos)
+Registro (html, css, php y base de datos)
+Definir la página de lista de productos en el carrito/deseos (html y css)
