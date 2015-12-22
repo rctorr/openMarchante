@@ -1,0 +1,35 @@
+/* basic/web/css/productos.css */
+
+/* Estilos para sólamente la página de Productos */
+div.site-produc ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.site-produc ul li {
+  width: 300px;
+  height: 400px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #eee;
+  float: left;
+}
+
+div.site-produc ul li.ultimo {
+  margin-right: 0px;
+}
+
+div.site-produc ul li img {
+  width: 100%;
+}
+
+div.site-produc ul li h4 {
+  color: #33f;
+}
+
+div.reset {
+  clear: both;
+}

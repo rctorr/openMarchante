@@ -9,6 +9,8 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\EntryForm;
+use yii\data\Pagination;
+use app\models\Producto;
 
 class SiteController extends Controller
 {
@@ -122,4 +124,28 @@ class SiteController extends Controller
             return $this->render('entry', ['model' => $model]);
         }
     }
-}
+
+    /* Esta función es para responder al click sobre la opción
+       Productos del menú */
+    public function actionProductos()
+    {
+      $query = Producto::find();
+
+      $pagination = new Pagination([
+          'defaultPageSize' => 9,
+          'totalCount' => $query->count(),
+      ]);
+
+      $productos = $query->orderBy('id')
+          ->offset($pagination->offset)
+          ->limit($pagination->limit)
+          ->all();
+
+      return $this->render('productos', [
+          'productos' => $productos,
+          'pagination' => $pagination,
+      ]);
+    } /* Termina actionProductos() */
+
+} /* Termina SiteController */
+?>
